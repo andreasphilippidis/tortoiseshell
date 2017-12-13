@@ -1,0 +1,51 @@
+/*global*/
+body {
+  display: block;
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 960px;
+}
+/*banner section*/
+.banner {
+  height: 30rem;
+  background-image: url(/Users/imac/Desktop/tortoiseshell/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner .container {
+  position: relative;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5f9ea0;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0 2rem;
+  margin: auto;
+}
+.container .logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo img {
+  height: 1.5rem;
+}
+.logo span {
+  padding-left: 1rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  display: block;
+  padding-left: 2rem;
+}
