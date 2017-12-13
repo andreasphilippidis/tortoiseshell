@@ -29,7 +29,7 @@ header {
   background-color: #5f9ea0;
   color: #f0ffff;
   font-size: 1rem;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 header .logo {
   display: flex;
@@ -45,6 +45,7 @@ header .logo {
 nav ul {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 ul li {
   display: block;
@@ -65,65 +66,166 @@ ul li {
 }
 /*services section*/
 .services .container {
-  display: flex;
-  justify-content: center;
-}
+    display: flex;
+    justify-content: center;
+  }
 .img-element {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3rem 3rem;
-  height: 8rem;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 3rem;
+    height: 8rem;
+  }
 .img-element span {
-  text-align: center;
-}
+    text-align: center;
+  }
 #paper {
-  max-width: 3rem;
-}
+    max-width: 3rem;
+  }
 #ruler, #truck {
-  max-width: 5rem;
-}
+    max-width: 5rem;
+  }
 /*business information*/
 .info .container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 .statement {
-  max-width: 35%;
-  padding-left: 5%;
-}
+    max-width: 35%;
+    padding-left: 5%;
+  }
 .statement h4 {
-  display: block;
-  font-size: 1rem;
-  background-color: #5f9ea0;
-  color: #f0ffff;
-  width: 10rem;
-  padding: .5rem 1.5rem;
-  margin: auto;
-  text-align: center;
-}
+    display: block;
+    font-size: 1rem;
+    background-color: #5f9ea0;
+    color: #f0ffff;
+    width: 10rem;
+    padding: .5rem 1.5rem;
+    margin: auto;
+    text-align: center;
+  }
 .statement p {
-  display: block;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  text-align: left;
-}
-/*footer*/
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    text-align: left;
+  }
+/*footer section*/
 footer {
-  display: flex;
-  align-items: center;
-}
-
+    display: flex;
+    align-items: center;
+  }
 footer .container {
+  display: flex;
   padding: 4rem 0;
-}
+  }
 footer img {
-  height: 1.5rem;
-  padding-left: 4rem;
+    height: 1.5rem;
+    padding-left: 4rem;
+  }
+footer span {
+    padding-left: 1rem;
+  }
+/*responsive design elements*/
+@media only screen and (min-width: 1024px)/*width>1024px*/ {
+/*hide these*/
+header .mobile-size{
+  display: none;
+}
+/*show these*/
+}
+@media only screen and (max-width: 1024px) and (min-width: 470px)/*470px<width<1024px*/ {
+/*hide these*/
+header .mobile-size{
+  display: none;
+}
+/*show these*/
+.container {
+    width: 100%;
+    margin: 0;
+  }
+.banner{
+    height: 22rem;
+  }
+header {
+    top: 0;
+  }
+.headline{
+    top: 5rem;
+    left: 0;
+    margin-right: 2rem;
+  }
+.headline h1{
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+  }
+}
+@media only screen and (max-width: 470px)/*width<470px*/ {
+/*hide these*/
+header nav {
+  display: none;
+}
+.logo span {
+  display: none;
 }
 footer span {
-  padding-left: 1rem;
+  display: none;
+}
+/*show these*/
+.container {
+    width: 100%;
+    margin: 0;
+  }
+.banner{
+    height: 17rem;
+    background-position: 20%;
+  }
+header {
+    top: 0;
+  }
+.headline{
+  display: block;
+  text-align: center;
+  top: 9rem;
+  left: 0;
+  }
+.headline h1{
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+.services .container {
+    flex-direction: column;
+    margin: 3.77rem 0;
+  }
+.services .img-element{
+  margin: 0 0 1.54rem 0;
+  height: 7rem;
+}
+.img-element span {
+    font-size: .77rem;
+    text-align: center;
+  }
+.info .container{
+  flex-direction: column;
+}
+.statement{
+  max-width: 100%;
+  padding-left: 2%;
+}
+.statement h4{
+  width: 100%;
+}
+.statement p{
+  font-size: .77rem;
+  margin-bottom: 4rem;
+}
+footer .container{
+  justify-content: center;
+}
+footer img{
+  padding-left: 0;
+}
+
 }
