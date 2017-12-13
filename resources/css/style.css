@@ -63,8 +63,8 @@ ul li {
   padding: 1.5rem 5rem;
   background-color: #ffffff;
 }
-/*brand section*/
-.brand .container {
+/*services section*/
+.services .container {
   display: flex;
   justify-content: center;
 }
@@ -85,4 +85,30 @@ ul li {
 }
 #ruler, #truck {
   max-width: 5rem;
+}
+/*business information*/
+.info .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: pink;
+}
+.statement {
+  max-width: 35%;
+  padding-left: 5%;
+}
+.statement h4 {
+  display: block;
+  font-size: 1rem;
+  background-color: #5f9ea0;
+  color: #ffffff;
+  width: 10rem;
+  padding: .5rem 1.5rem;
+  margin: auto;
+  text-align: center;
+}
+.statement p {
+  display: block;
+  margin-top: 1rem;
+  text-align: left;
 }
